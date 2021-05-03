@@ -1,0 +1,137 @@
+FORMAT: 1A
+HOST: localhost/
+
+# UAS
+
+Menampilkan,menghapus,mengupdate, dan mendelete menu makanan. 
+
+## Data - Data Menu [/RAT]
+
+### Semua list menu [GET/RAT/get.php]
+
++ Response 200 (application/json)
+
+        [
+            {
+                "menu": [
+                    {
+                        "nama_makanan": "Bihun",
+                        "harga_makanan": "10000",
+                        "jenis_makanan": "chinese"
+                    },
+                    {
+                        "nama_makanan": "Kwetiao",
+                        "harga_makanan": "12000",
+                        "jenis_makanan": "Chinese"
+                    },
+                    {
+                        "nama_makanan": "Sushi",
+                        "harga_makanan": "20000",
+                        "jenis_makanan": "japanese"
+                    },
+                    {
+                        "nama_makanan": "Spagetthi",
+                        "harga_makanan": "20000",
+                        "jenis_makanan": "Italy"
+                    },
+                    {
+                        "nama_makanan": "Ramen",
+                        "harga_makanan": "15000",
+                        "jenis_makanan": "Japanese"
+                    }
+                ]
+            }
+        ]
+
+### Membuat & Mendaftar Menu baru [POST]
+
+Untuk menambah menu baru
+
++ Request (application/json)
+
+        {
+        "menu data": [
+        {
+            $nama_makanan = $_POST["nama_makanan"];
+            $harga_makanan = $_POST["harga_makanan"];
+            $jenis_makanan = $_POST["jenis_makanan"];
+        }
+        ]
+        }
+
++ Response 201 (application/json)
+
+    + Headers
+
+            Location: /RAT/post.php
+
+    + Body
+
+            {
+            "menu data": [
+            {
+                "nama_makanan": "",
+                "harga_makanan": "",
+                "jenis_makanan": "",
+            },
+            ]
+            }
+            
+### Update data menu [PUT]
+
+untuk mengupdate data menu
+
++ Request (application/json)
+
+        {
+        "menu update": [
+        {
+            "Id": "id",
+        }
+        ]
+        }
+
++ Response 201 (application/json)
+
+    + Headers
+
+            Location: /RAT/update.php
+
+    + Body
+
+            {
+            "menu update": [
+            {
+                "nama_makanan": "",
+                "harga_makanan": "",
+                "jenis_makanan": "",
+            },
+            ]
+            }
+            
+### Menghapus data menu [DELETE/RAT/delete.php]
+
+untuk menghapus data menu. 
+
++ Request (application/json)
+
+        {
+        "menu delete": [
+        {
+            "Id": "id",
+        }
+        ]
+        }
+        
+        + Response 201 (application/json)
+
+    + Headers
+
+            Location: /RAT/delete
+
+    + Body
+
+            {
+            " Menu is Successfully Deleted. "
+            ]
+            }
