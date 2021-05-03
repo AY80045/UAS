@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to DisChat</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.js" integrity="sha256-mkdmXjMvBcpAyyFNCVdbwg4v+ycJho65QLDwVE3ViDs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    
+</head>
+<body>
+    <div id="container">
+        <div id="inviteContainer">
+            <div class="logoContainer"><img class="logo" src="images/front icon.png"/><img class="text" src="images/Word.png"/></div>
+            <div class="acceptContainer">
+                <form action="chat.html">
+                <h1>WELCOME BACK!</h1>
+                <div class="formContainer">
+                    <div class="formDiv" style="transition-delay: 0.2s;">
+                    <p>Username</p>
+                    <input type="text" name="username" id="username" required=""/>
+                    </div>
+                    <div class="formDiv form-control" style="transition-delay: 0.6s;">
+                        <label for="room">Choose room</label>
+                        <br>
+                        <select name="room" id="room">
+                            <option value="Chatting">Chatting</option>
+                            <option value="Gaming">Gaming</option>
+                            <option value="Studying">Studying</option>
+                        </select> 
+                    </div>
+                    <div class="formDiv divcenter" style="transition-delay: 0.8s;">
+                    <button class="acceptBtn" type="submit">Join Room</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script  src="js/index.js"></script> 
+</body>
+</html>
