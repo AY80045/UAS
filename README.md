@@ -3,9 +3,9 @@
 Aplikasi ini merupakan aplikasi simple untuk menampilkan,mengubah,mengupdate, dan mendelete menu makanan dengan mengambil data dari database. Aplikasi ini memerlukan XAMPP,Postman,dan MYSQL.
 
 Langkah-langkah menjalankan aplikasi adalah :
-Pertama, Jalankan XAMPP dan buka localhost/phpmyadmin
-Kedua, Download folder RAT dan ekstrak nama file "menu_makanan.sql"
-Ketiga, Silahkan mengetest fitur aplikasi ini pada aplikasi Postman
+Pertama, Jalankan XAMPP dan buka localhost/phpmyadmin. 
+Kedua, Download folder RAT dan ekstrak nama file "menu_makanan.sql". 
+Ketiga, Silahkan mengetest fitur aplikasi ini pada aplikasi Postman. 
 
 Cara menggunakan fitur :
 Get, Buka aplikasi Postman dengan menggunakan method Get dan input localhost/RAT/get.php. Maka akan muncul list data data menu makanan
