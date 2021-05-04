@@ -15,3 +15,5 @@ Post, Pada method diganti menjadi Post dan input localhost/RAT/post.php. Kemudia
 Put, Pada method Post dan input localhost/RAT/update.php. Kemudian ke bagian paramas, input key Id data yang ingin diubah, setelah itu ke bagian body masukkan data data key atau value yang mau diubah dan send. Maka data baru ini akan dimasukkan ke dalam database sesuai dengan id yang diinginkan.
 
 Delete, Pada method diganti menjadi Delete dan input localhost/RAT/delete.php. Kemudian ke bagian params, input id yang mau di hapus dan tekan send. Maka data menu akan dihapus dari database sesuai dengan id yang telah di pilih.
+
+note : Folder DisChat merupakan sambungan tugas UTS, sedangkan folder RAT adalah tugas UAS dengan kaidah REST
